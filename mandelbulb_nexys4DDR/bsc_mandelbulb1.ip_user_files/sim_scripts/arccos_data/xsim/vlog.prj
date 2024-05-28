@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../bsc_mandelbulb1.gen/sources_1/ip/arccos_data/sim/arccos_data.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

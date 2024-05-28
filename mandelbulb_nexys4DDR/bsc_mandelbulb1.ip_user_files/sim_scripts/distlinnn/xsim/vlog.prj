@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../bsc_mandelbulb1.gen/sources_1/ip/distlinnn/sim/distlinnn.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

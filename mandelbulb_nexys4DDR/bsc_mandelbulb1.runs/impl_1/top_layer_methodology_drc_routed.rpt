@@ -1,0 +1,361 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sun Jan  7 01:42:30 2024
+| Host         : DESKTOP-H9C91L2 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_layer_methodology_drc_routed.rpt -pb top_layer_methodology_drc_routed.pb -rpx top_layer_methodology_drc_routed.rpx
+| Design       : top_layer
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 65
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| SYNTH-10  | Warning  | Wide multiplier               | 45         |
+| TIMING-18 | Warning  | Missing input or output delay | 20         |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-10#1 Warning
+Wide multiplier  
+Detected multiplier at rm/fm1/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#2 Warning
+Wide multiplier  
+Detected multiplier at rm/fm1/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#3 Warning
+Wide multiplier  
+Detected multiplier at rm/fm1/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#4 Warning
+Wide multiplier  
+Detected multiplier at rm/fm1/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#5 Warning
+Wide multiplier  
+Detected multiplier at rm/fm1/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#6 Warning
+Wide multiplier  
+Detected multiplier at rm/fm1/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#7 Warning
+Wide multiplier  
+Detected multiplier at rm/fm1/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#8 Warning
+Wide multiplier  
+Detected multiplier at rm/fm1/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#9 Warning
+Wide multiplier  
+Detected multiplier at rm/fm1/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#10 Warning
+Wide multiplier  
+Detected multiplier at rm/fm1/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#11 Warning
+Wide multiplier  
+Detected multiplier at rm/fm1/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#12 Warning
+Wide multiplier  
+Detected multiplier at rm/fm1/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#13 Warning
+Wide multiplier  
+Detected multiplier at rm/fm1/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#14 Warning
+Wide multiplier  
+Detected multiplier at rm/fm1/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#15 Warning
+Wide multiplier  
+Detected multiplier at rm/fm1/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#16 Warning
+Wide multiplier  
+Detected multiplier at rm/fm2/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#17 Warning
+Wide multiplier  
+Detected multiplier at rm/fm2/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#18 Warning
+Wide multiplier  
+Detected multiplier at rm/fm2/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#19 Warning
+Wide multiplier  
+Detected multiplier at rm/fm2/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#20 Warning
+Wide multiplier  
+Detected multiplier at rm/fm2/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#21 Warning
+Wide multiplier  
+Detected multiplier at rm/fm2/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#22 Warning
+Wide multiplier  
+Detected multiplier at rm/fm2/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#23 Warning
+Wide multiplier  
+Detected multiplier at rm/fm2/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#24 Warning
+Wide multiplier  
+Detected multiplier at rm/fm2/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#25 Warning
+Wide multiplier  
+Detected multiplier at rm/fm2/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#26 Warning
+Wide multiplier  
+Detected multiplier at rm/fm2/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#27 Warning
+Wide multiplier  
+Detected multiplier at rm/fm2/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#28 Warning
+Wide multiplier  
+Detected multiplier at rm/fm2/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#29 Warning
+Wide multiplier  
+Detected multiplier at rm/fm2/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#30 Warning
+Wide multiplier  
+Detected multiplier at rm/fm2/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#31 Warning
+Wide multiplier  
+Detected multiplier at rm/fm3/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#32 Warning
+Wide multiplier  
+Detected multiplier at rm/fm3/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#33 Warning
+Wide multiplier  
+Detected multiplier at rm/fm3/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#34 Warning
+Wide multiplier  
+Detected multiplier at rm/fm3/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#35 Warning
+Wide multiplier  
+Detected multiplier at rm/fm3/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#36 Warning
+Wide multiplier  
+Detected multiplier at rm/fm3/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#37 Warning
+Wide multiplier  
+Detected multiplier at rm/fm3/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#38 Warning
+Wide multiplier  
+Detected multiplier at rm/fm3/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#39 Warning
+Wide multiplier  
+Detected multiplier at rm/fm3/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#40 Warning
+Wide multiplier  
+Detected multiplier at rm/fm3/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#41 Warning
+Wide multiplier  
+Detected multiplier at rm/fm3/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#42 Warning
+Wide multiplier  
+Detected multiplier at rm/fm3/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#43 Warning
+Wide multiplier  
+Detected multiplier at rm/fm3/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#44 Warning
+Wide multiplier  
+Detected multiplier at rm/fm3/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#45 Warning
+Wide multiplier  
+Detected multiplier at rm/fm3/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on BTNC relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on BTND relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on BTNL relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on BTNR relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on BTNU relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on reset relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on hsync relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on rgb[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on rgb[10] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on rgb[11] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on rgb[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on rgb[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on rgb[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on rgb[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on rgb[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on rgb[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on rgb[7] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on rgb[8] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on rgb[9] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on vsync relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+

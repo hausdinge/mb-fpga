@@ -1,0 +1,1422 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Apr  2 07:58:26 2024
+| Host         : DESKTOP-H9C91L2 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file display_demo_dvi_methodology_drc_routed.rpt -pb display_demo_dvi_methodology_drc_routed.pb -rpx display_demo_dvi_methodology_drc_routed.rpx
+| Design       : display_demo_dvi
+| Device       : xc7a200tsbg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 277
++-----------+----------+----------------------------------+------------+
+| Rule      | Severity | Description                      | Violations |
++-----------+----------+----------------------------------+------------+
+| HPDR-1    | Warning  | Port pin direction inconsistency | 1          |
+| SYNTH-10  | Warning  | Wide multiplier                  | 270        |
+| TIMING-18 | Warning  | Missing input or output delay    | 6          |
++-----------+----------+----------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+HPDR-1#1 Warning
+Port pin direction inconsistency  
+Hierarchical port(pin) hdmi_tx_rscl direction INOUT is not consistent with the directions of the cell pins/ports found at that level of the netlist hierarchy. Please review the design and consider changing the port(pin) direction. Both drivers and loads were expected for the net (hdmi_tx_rscl) connected to this Port, but both were not found.
+Related violations: <none>
+
+SYNTH-10#1 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm1/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#2 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm1/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#3 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm1/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#4 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm1/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#5 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm1/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#6 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm1/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#7 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm1/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#8 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm1/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#9 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm1/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#10 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm1/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#11 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm1/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#12 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm1/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#13 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm1/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#14 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm1/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#15 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm1/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#16 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm2/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#17 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm2/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#18 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm2/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#19 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm2/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#20 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm2/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#21 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm2/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#22 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm2/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#23 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm2/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#24 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm2/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#25 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm2/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#26 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm2/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#27 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm2/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#28 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm2/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#29 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm2/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#30 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm2/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#31 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm3/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#32 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm3/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#33 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm3/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#34 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm3/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#35 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm3/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#36 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm3/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#37 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm3/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#38 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm3/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#39 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm3/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#40 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm3/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#41 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm3/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#42 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm3/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#43 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm3/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#44 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm3/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#45 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/fm3/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#46 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst1/fm/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#47 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst1/fm/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#48 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst1/fm/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#49 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst1/fm/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#50 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst1/fm/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#51 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst1/fm/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#52 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst1/fm/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#53 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst1/fm/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#54 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst1/fm/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#55 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst1/fm/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#56 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst1/fm/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#57 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst1/fm/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#58 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst1/fm/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#59 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst1/fm/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#60 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst1/fm/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#61 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst2/fm/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#62 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst2/fm/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#63 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst2/fm/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#64 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst2/fm/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#65 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst2/fm/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#66 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst2/fm/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#67 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst2/fm/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#68 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst2/fm/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#69 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst2/fm/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#70 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst2/fm/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#71 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst2/fm/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#72 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst2/fm/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#73 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst2/fm/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#74 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst2/fm/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#75 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst2/fm/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#76 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst3/fm/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#77 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst3/fm/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#78 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst3/fm/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#79 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst3/fm/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#80 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst3/fm/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#81 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst3/fm/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#82 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst3/fm/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#83 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst3/fm/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#84 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst3/fm/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#85 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst3/fm/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#86 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst3/fm/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#87 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst3/fm/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#88 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst3/fm/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#89 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst3/fm/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#90 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/ld/approxmult_dst3/fm/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#91 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/dr_zr/drzr/approxmult_drzr/fm/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#92 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/dr_zr/drzr/approxmult_drzr/fm/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#93 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/dr_zr/drzr/approxmult_drzr/fm/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#94 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/dr_zr/drzr/approxmult_drzr/fm/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#95 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/dr_zr/drzr/approxmult_drzr/fm/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#96 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/dr_zr/drzr/approxmult_drzr/fm/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#97 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/dr_zr/drzr/approxmult_drzr/fm/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#98 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/dr_zr/drzr/approxmult_drzr/fm/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#99 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/dr_zr/drzr/approxmult_drzr/fm/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#100 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/dr_zr/drzr/approxmult_drzr/fm/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#101 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/dr_zr/drzr/approxmult_drzr/fm/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#102 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/dr_zr/drzr/approxmult_drzr/fm/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#103 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/dr_zr/drzr/approxmult_drzr/fm/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#104 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/dr_zr/drzr/approxmult_drzr/fm/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#105 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/dr_zr/drzr/approxmult_drzr/fm/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#106 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act1/fmatan2scale/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#107 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act1/fmatan2scale/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#108 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act1/fmatan2scale/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#109 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act1/fmatan2scale/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#110 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act1/fmatan2scale/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#111 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act1/fmatan2scale/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#112 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act1/fmatan2scale/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#113 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act1/fmatan2scale/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#114 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act1/fmatan2scale/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#115 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act1/fmatan2scale/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#116 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act1/fmatan2scale/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#117 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act1/fmatan2scale/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#118 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act1/fmatan2scale/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#119 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act1/fmatan2scale/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#120 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act1/fmatan2scale/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#121 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act2/fmatan2scale/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#122 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act2/fmatan2scale/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#123 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act2/fmatan2scale/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#124 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act2/fmatan2scale/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#125 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act2/fmatan2scale/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#126 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act2/fmatan2scale/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#127 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act2/fmatan2scale/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#128 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act2/fmatan2scale/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#129 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act2/fmatan2scale/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#130 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act2/fmatan2scale/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#131 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act2/fmatan2scale/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#132 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act2/fmatan2scale/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#133 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act2/fmatan2scale/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#134 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act2/fmatan2scale/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#135 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_1/tp/tp/act2/fmatan2scale/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#136 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/dr_zr/drzr/approxmult_drzr/fm/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#137 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/dr_zr/drzr/approxmult_drzr/fm/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#138 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/dr_zr/drzr/approxmult_drzr/fm/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#139 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/dr_zr/drzr/approxmult_drzr/fm/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#140 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/dr_zr/drzr/approxmult_drzr/fm/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#141 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/dr_zr/drzr/approxmult_drzr/fm/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#142 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/dr_zr/drzr/approxmult_drzr/fm/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#143 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/dr_zr/drzr/approxmult_drzr/fm/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#144 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/dr_zr/drzr/approxmult_drzr/fm/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#145 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/dr_zr/drzr/approxmult_drzr/fm/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#146 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/dr_zr/drzr/approxmult_drzr/fm/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#147 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/dr_zr/drzr/approxmult_drzr/fm/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#148 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/dr_zr/drzr/approxmult_drzr/fm/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#149 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/dr_zr/drzr/approxmult_drzr/fm/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#150 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/dr_zr/drzr/approxmult_drzr/fm/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#151 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act1/fmatan2scale/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#152 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act1/fmatan2scale/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#153 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act1/fmatan2scale/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#154 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act1/fmatan2scale/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#155 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act1/fmatan2scale/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#156 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act1/fmatan2scale/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#157 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act1/fmatan2scale/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#158 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act1/fmatan2scale/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#159 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act1/fmatan2scale/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#160 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act1/fmatan2scale/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#161 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act1/fmatan2scale/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#162 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act1/fmatan2scale/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#163 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act1/fmatan2scale/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#164 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act1/fmatan2scale/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#165 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act1/fmatan2scale/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#166 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act2/fmatan2scale/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#167 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act2/fmatan2scale/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#168 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act2/fmatan2scale/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#169 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act2/fmatan2scale/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#170 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act2/fmatan2scale/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#171 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act2/fmatan2scale/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#172 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act2/fmatan2scale/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#173 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act2/fmatan2scale/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#174 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act2/fmatan2scale/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#175 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act2/fmatan2scale/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#176 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act2/fmatan2scale/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#177 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act2/fmatan2scale/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#178 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act2/fmatan2scale/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#179 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act2/fmatan2scale/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#180 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_2/tp/tp/act2/fmatan2scale/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#181 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/dr_zr/drzr/approxmult_drzr/fm/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#182 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/dr_zr/drzr/approxmult_drzr/fm/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#183 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/dr_zr/drzr/approxmult_drzr/fm/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#184 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/dr_zr/drzr/approxmult_drzr/fm/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#185 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/dr_zr/drzr/approxmult_drzr/fm/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#186 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/dr_zr/drzr/approxmult_drzr/fm/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#187 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/dr_zr/drzr/approxmult_drzr/fm/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#188 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/dr_zr/drzr/approxmult_drzr/fm/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#189 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/dr_zr/drzr/approxmult_drzr/fm/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#190 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/dr_zr/drzr/approxmult_drzr/fm/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#191 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/dr_zr/drzr/approxmult_drzr/fm/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#192 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/dr_zr/drzr/approxmult_drzr/fm/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#193 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/dr_zr/drzr/approxmult_drzr/fm/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#194 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/dr_zr/drzr/approxmult_drzr/fm/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#195 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/dr_zr/drzr/approxmult_drzr/fm/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#196 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act1/fmatan2scale/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#197 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act1/fmatan2scale/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#198 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act1/fmatan2scale/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#199 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act1/fmatan2scale/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#200 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act1/fmatan2scale/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#201 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act1/fmatan2scale/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#202 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act1/fmatan2scale/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#203 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act1/fmatan2scale/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#204 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act1/fmatan2scale/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#205 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act1/fmatan2scale/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#206 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act1/fmatan2scale/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#207 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act1/fmatan2scale/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#208 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act1/fmatan2scale/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#209 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act1/fmatan2scale/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#210 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act1/fmatan2scale/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#211 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act2/fmatan2scale/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#212 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act2/fmatan2scale/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#213 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act2/fmatan2scale/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#214 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act2/fmatan2scale/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#215 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act2/fmatan2scale/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#216 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act2/fmatan2scale/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#217 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act2/fmatan2scale/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#218 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act2/fmatan2scale/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#219 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act2/fmatan2scale/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#220 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act2/fmatan2scale/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#221 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act2/fmatan2scale/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#222 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act2/fmatan2scale/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#223 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act2/fmatan2scale/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#224 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act2/fmatan2scale/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#225 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_3/tp/tp/act2/fmatan2scale/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#226 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/dr_zr/drzr/approxmult_drzr/fm/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#227 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/dr_zr/drzr/approxmult_drzr/fm/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#228 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/dr_zr/drzr/approxmult_drzr/fm/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#229 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/dr_zr/drzr/approxmult_drzr/fm/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#230 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/dr_zr/drzr/approxmult_drzr/fm/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#231 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/dr_zr/drzr/approxmult_drzr/fm/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#232 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/dr_zr/drzr/approxmult_drzr/fm/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#233 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/dr_zr/drzr/approxmult_drzr/fm/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#234 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/dr_zr/drzr/approxmult_drzr/fm/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#235 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/dr_zr/drzr/approxmult_drzr/fm/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#236 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/dr_zr/drzr/approxmult_drzr/fm/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#237 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/dr_zr/drzr/approxmult_drzr/fm/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#238 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/dr_zr/drzr/approxmult_drzr/fm/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#239 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/dr_zr/drzr/approxmult_drzr/fm/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#240 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/dr_zr/drzr/approxmult_drzr/fm/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#241 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act1/fmatan2scale/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#242 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act1/fmatan2scale/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#243 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act1/fmatan2scale/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#244 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act1/fmatan2scale/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#245 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act1/fmatan2scale/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#246 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act1/fmatan2scale/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#247 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act1/fmatan2scale/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#248 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act1/fmatan2scale/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#249 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act1/fmatan2scale/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#250 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act1/fmatan2scale/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#251 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act1/fmatan2scale/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#252 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act1/fmatan2scale/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#253 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act1/fmatan2scale/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#254 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act1/fmatan2scale/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#255 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act1/fmatan2scale/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#256 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act2/fmatan2scale/ of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#257 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act2/fmatan2scale/M_reg[0] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#258 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act2/fmatan2scale/M_reg[0]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#259 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act2/fmatan2scale/M_reg[1] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#260 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act2/fmatan2scale/M_reg[1]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#261 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act2/fmatan2scale/M_reg[2] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#262 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act2/fmatan2scale/M_reg[2]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#263 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act2/fmatan2scale/M_reg[3] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#264 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act2/fmatan2scale/M_reg[3]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#265 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act2/fmatan2scale/M_reg[4] of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#266 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act2/fmatan2scale/M_reg[4]__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#267 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act2/fmatan2scale/M_reg[5] of size 14x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#268 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act2/fmatan2scale/M_reg[5]__0 of size 18x14, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#269 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act2/fmatan2scale/M_reg[6] of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#270 Warning
+Wide multiplier  
+Detected multiplier at raymarcher/ss/msdi_4/tp/tp/act2/fmatan2scale/__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on btnc relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on btnd relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on btnl relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on btnr relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on btnu relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on sw0 relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+

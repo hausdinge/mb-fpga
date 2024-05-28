@@ -1,0 +1,1 @@
+mult_35_24_core.vhd,vhdl,xil_defaultlib,../../../../bsc_mandelbulb1.gen/sources_1/ip/mult_35_24_core/sim/mult_35_24_core.vhd,

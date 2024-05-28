@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../bsc_mandelbulb2.gen/sources_1/ip/mult_35_35_core_1/sim/mult_35_35_core.vhd" \
+
+nosort

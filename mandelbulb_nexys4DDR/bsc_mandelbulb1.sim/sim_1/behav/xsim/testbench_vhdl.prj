@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../bsc_mandelbulb1.gen/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd" \
+"../../../../bsc_mandelbulb1.gen/sources_1/ip/mult_35_24_core/sim/mult_35_24_core.vhd" \
+"../../../../bsc_mandelbulb1.gen/sources_1/ip/mult_35_35_core/sim/mult_35_35_core.vhd" \
+"../../../../bsc_mandelbulb1.gen/sources_1/ip/RAM_FIFO1/sim/RAM_FIFO1.vhd" \
+
+# Do not sort compile order
+nosort

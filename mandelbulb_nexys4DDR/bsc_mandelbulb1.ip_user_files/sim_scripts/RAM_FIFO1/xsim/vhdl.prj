@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../bsc_mandelbulb1.gen/sources_1/ip/RAM_FIFO1/sim/RAM_FIFO1.vhd" \
+
+nosort
