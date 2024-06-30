@@ -1,6 +1,6 @@
 Team number: AOHW-311
 Project name: Deep zoom Mandelbulb on FPGAs
-Link to YouTube Video(s): TBD
+Link to YouTube Video(s): https://youtu.be/cijEOWLiD6s
 Link to project repository: https://github.com/hausdinge/mb-fpga
 
 University name: Heidelberg University
