@@ -70,9 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 5
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a200tsbg484-1
 
@@ -120,6 +118,7 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/ray_march.sv
   C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/new/bkm_log2.sv
   C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/new/cordic_inverse_number.sv
+  C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/new/PushButton_Debouncer.sv
 }
 read_ip -quiet C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]

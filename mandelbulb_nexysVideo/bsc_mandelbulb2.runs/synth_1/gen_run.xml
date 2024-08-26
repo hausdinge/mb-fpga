@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1712025470" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/display_demo_dvi.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1724694815" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/display_demo_dvi.dcp">
   <File Type="PA-TCL" Name="display_demo_dvi.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="display_demo_dvi_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="display_demo_dvi_reports.tcl"/>
@@ -253,6 +253,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/cordic_inverse_number.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PushButton_Debouncer.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

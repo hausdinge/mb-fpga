@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Tue Apr  2 04:37:57 2024
-# Process ID: 30292
+# Start of session at: Mon Aug 26 19:53:37 2024
+# Process ID: 39532
 # Current directory: C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.runs/synth_1
 # Command line: vivado.exe -log display_demo_dvi.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source display_demo_dvi.tcl
 # Log file: C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.runs/synth_1/display_demo_dvi.vds
@@ -11,6 +11,7 @@
 # Running On: DESKTOP-H9C91L2, OS: Windows, CPU Frequency: 3610 MHz, CPU Physical cores: 12, Host memory: 34141 MB
 #-----------------------------------------------------------
 source display_demo_dvi.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 429.328 ; gain = 96.316
 Command: synth_design -top display_demo_dvi -part xc7a200tsbg484-1 -incremental_mode off
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
@@ -18,10 +19,10 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200
 INFO: [Device 21-403] Loading part xc7a200tsbg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 41052
+INFO: [Synth 8-7075] Helper process launched with PID 27012
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1302.184 ; gain = 408.316
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1301.219 ; gain = 408.266
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'display_demo_dvi' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/rtl/demo/display_demo_dvi.sv:7]
 INFO: [Synth 8-6157] synthesizing module 'display_clocks' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/rtl/display_clocks.sv:4]
@@ -99,8 +100,8 @@ INFO: [Synth 8-6155] done synthesizing module 'mb_to_polar' (0#1) [C:/Users/haus
 INFO: [Synth 8-6157] synthesizing module 'mb_dr_zr' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/mb_dr_zr.sv:4]
 INFO: [Synth 8-6157] synthesizing module 'dr_zr' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/dr_zr.sv:5]
 INFO: [Synth 8-6157] synthesizing module 'fixedpoint_pow8' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/fixedpoint_pow8.sv:5]
-INFO: [Synth 8-6157] synthesizing module 'mult_35_35_core' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.runs/synth_1/.Xil/Vivado-30292-DESKTOP-H9C91L2/realtime/mult_35_35_core_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mult_35_35_core' (0#1) [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.runs/synth_1/.Xil/Vivado-30292-DESKTOP-H9C91L2/realtime/mult_35_35_core_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mult_35_35_core' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.runs/synth_1/.Xil/Vivado-39532-DESKTOP-H9C91L2/realtime/mult_35_35_core_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mult_35_35_core' (0#1) [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.runs/synth_1/.Xil/Vivado-39532-DESKTOP-H9C91L2/realtime/mult_35_35_core_stub.v:5]
 WARNING: [Synth 8-689] width (65) of port connection 'A' does not match port width (35) of module 'mult_35_35_core' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/fixedpoint_pow8.sv:27]
 WARNING: [Synth 8-689] width (65) of port connection 'B' does not match port width (35) of module 'mult_35_35_core' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/fixedpoint_pow8.sv:27]
 WARNING: [Synth 8-689] width (70) of port connection 'A' does not match port width (35) of module 'mult_35_35_core' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/fixedpoint_pow8.sv:28]
@@ -115,8 +116,8 @@ INFO: [Synth 8-6155] done synthesizing module 'mb_dr_zr' (0#1) [C:/Users/hausd/D
 INFO: [Synth 8-6157] synthesizing module 'mb_to_cartesian' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/mb_to_cartesian.sv:6]
 INFO: [Synth 8-6157] synthesizing module 'fixedpoint_to_cartesian' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/fixedpoint_to_cartesian.sv:5]
 INFO: [Synth 8-6157] synthesizing module 'fixedpoint_sin_cos' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/fixedpoint_sin_cos.sv:6]
-INFO: [Synth 8-6157] synthesizing module 'mult_35_24_core' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.runs/synth_1/.Xil/Vivado-30292-DESKTOP-H9C91L2/realtime/mult_35_24_core_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mult_35_24_core' (0#1) [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.runs/synth_1/.Xil/Vivado-30292-DESKTOP-H9C91L2/realtime/mult_35_24_core_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mult_35_24_core' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.runs/synth_1/.Xil/Vivado-39532-DESKTOP-H9C91L2/realtime/mult_35_24_core_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mult_35_24_core' (0#1) [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.runs/synth_1/.Xil/Vivado-39532-DESKTOP-H9C91L2/realtime/mult_35_24_core_stub.v:5]
 WARNING: [Synth 8-689] width (65) of port connection 'A' does not match port width (35) of module 'mult_35_24_core' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/fixedpoint_sin_cos.sv:73]
 WARNING: [Synth 8-689] width (65) of port connection 'A' does not match port width (35) of module 'mult_35_24_core' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/fixedpoint_sin_cos.sv:82]
 WARNING: [Synth 8-689] width (65) of port connection 'A' does not match port width (35) of module 'mult_35_24_core' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/fixedpoint_sin_cos.sv:91]
@@ -134,6 +135,8 @@ INFO: [Synth 8-6157] synthesizing module 'bkm_log2' [C:/Users/hausd/Dateien/Xili
 INFO: [Synth 8-6155] done synthesizing module 'bkm_log2' (0#1) [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/new/bkm_log2.sv:4]
 INFO: [Synth 8-6155] done synthesizing module 'mb_log_dist' (0#1) [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/mb_log_dist.sv:5]
 INFO: [Synth 8-6155] done synthesizing module 'mandelbulb_sdf' (0#1) [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/mandelbulb_sdf.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'PushButton_Debouncer' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/new/PushButton_Debouncer.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'PushButton_Debouncer' (0#1) [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/new/PushButton_Debouncer.sv:3]
 WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/fixedpoint.sv:67]
 WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/fixedpoint.sv:67]
 WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/new/fixedpoint.sv:67]
@@ -142,8 +145,8 @@ INFO: [Synth 8-6155] done synthesizing module 'ray_march' (0#1) [C:/Users/hausd/
 INFO: [Synth 8-6157] synthesizing module 'BRAM_to_HDMI' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/new/BRAM_to_HDMI.sv:5]
 	Parameter H_RES bound to: 1280 - type: integer 
 	Parameter V_RES bound to: 720 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.runs/synth_1/.Xil/Vivado-30292-DESKTOP-H9C91L2/realtime/blk_mem_gen_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.runs/synth_1/.Xil/Vivado-30292-DESKTOP-H9C91L2/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.runs/synth_1/.Xil/Vivado-39532-DESKTOP-H9C91L2/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.runs/synth_1/.Xil/Vivado-39532-DESKTOP-H9C91L2/realtime/blk_mem_gen_0_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'BRAM_to_HDMI' (0#1) [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/new/BRAM_to_HDMI.sv:5]
 INFO: [Synth 8-6157] synthesizing module 'dvi_generator' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/rtl/dvi_generator.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'tmds_encoder_dvi' [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/sources_1/imports/rtl/tmds_encoder_dvi.sv:3]
@@ -392,18 +395,18 @@ WARNING: [Synth 8-7129] Port data_in[y_iter][32] in module mb_to_cartesian is ei
 WARNING: [Synth 8-7129] Port data_in[y_iter][31] in module mb_to_cartesian is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1630.305 ; gain = 736.438
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1629.316 ; gain = 736.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1630.305 ; gain = 736.438
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1629.316 ; gain = 736.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1630.305 ; gain = 736.438
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1629.316 ; gain = 736.363
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 2902.609 ; gain = 91.613
+Netlist sorting complete. Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2903.312 ; gain = 92.410
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -489,15 +492,15 @@ Finished Parsing XDC File [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bs
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.srcs/constrs_1/imports/Downloads/Nexys-Video-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/display_demo_dvi_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/display_demo_dvi_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
-write_xdc: Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 4480.621 ; gain = 653.754
+write_xdc: Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 4475.691 ; gain = 648.988
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.753 . Memory (MB): peak = 4484.395 ; gain = 2.902
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.781 . Memory (MB): peak = 4479.535 ; gain = 2.973
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   MMCME2_BASE => MMCME2_ADV: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 4484.418 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 4479.535 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'bth/framebuffer' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'raymarcher/ss/msdi_1/dr_zr/drzr/p8/pw2_1' at clock pin 'CLK' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'raymarcher/ss/msdi_1/dr_zr/drzr/p8/pw2_2' at clock pin 'CLK' is different from the actual clock period '10.000', this can lead to different synthesis results.
@@ -538,14 +541,14 @@ WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context 
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:31 ; elapsed = 00:02:40 . Memory (MB): peak = 4490.102 ; gain = 3596.234
+Finished Constraint Validation : Time (s): cpu = 00:00:58 ; elapsed = 00:02:14 . Memory (MB): peak = 4485.188 ; gain = 3592.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:31 ; elapsed = 00:02:40 . Memory (MB): peak = 4490.102 ; gain = 3596.234
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:58 ; elapsed = 00:02:14 . Memory (MB): peak = 4485.188 ; gain = 3592.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -588,10 +591,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for raymarcher/ss/msdi_2/dr_zr/drzr/p
 Applied set_property KEEP_HIERARCHY = SOFT for raymarcher/ss/msdi_3/dr_zr/drzr/p8/pw2_3. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for raymarcher/ss/msdi_4/dr_zr/drzr/p8/pw2_3. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:32 ; elapsed = 00:02:42 . Memory (MB): peak = 4490.102 ; gain = 3596.234
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:02:16 . Memory (MB): peak = 4485.188 ; gain = 3592.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:51 ; elapsed = 00:03:13 . Memory (MB): peak = 4490.102 ; gain = 3596.234
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:10 ; elapsed = 00:02:48 . Memory (MB): peak = 4485.188 ; gain = 3592.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -639,7 +642,7 @@ Detailed RTL Component Info :
 	                5 Bit    Registers := 3     
 	                4 Bit    Registers := 2     
 	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 850   
+	                1 Bit    Registers := 864   
 +---Multipliers : 
 	              65x65  Multipliers := 18    
 +---Muxes : 
@@ -684,7 +687,7 @@ Detailed RTL Component Info :
 	   2 Input    1 Bit        Muxes := 52    
 	   3 Input    1 Bit        Muxes := 16    
 	   4 Input    1 Bit        Muxes := 8     
-	   5 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -2561,7 +2564,7 @@ DSP Report: register fm3/M_reg[5] is absorbed into DSP fm3/M_reg[6].
 DSP Report: operator fm3/ is absorbed into DSP fm3/M_reg[6].
 DSP Report: operator fm3/ is absorbed into DSP fm3/M_reg[6].
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:25 ; elapsed = 00:05:12 . Memory (MB): peak = 4490.102 ; gain = 3596.234
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:37 ; elapsed = 00:04:50 . Memory (MB): peak = 4485.188 ; gain = 3592.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -2767,19 +2770,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:41 ; elapsed = 00:05:47 . Memory (MB): peak = 4490.102 ; gain = 3596.234
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:50 ; elapsed = 00:05:23 . Memory (MB): peak = 4485.188 ; gain = 3592.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:04:38 ; elapsed = 00:07:49 . Memory (MB): peak = 4490.102 ; gain = 3596.234
+Finished Timing Optimization : Time (s): cpu = 00:03:21 ; elapsed = 00:06:32 . Memory (MB): peak = 4485.188 ; gain = 3592.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:06:00 ; elapsed = 00:09:35 . Memory (MB): peak = 4490.102 ; gain = 3596.234
+Finished Technology Mapping : Time (s): cpu = 00:03:47 ; elapsed = 00:07:30 . Memory (MB): peak = 4485.188 ; gain = 3592.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -2797,37 +2800,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:06:34 ; elapsed = 00:10:42 . Memory (MB): peak = 4490.102 ; gain = 3596.234
+Finished IO Insertion : Time (s): cpu = 00:04:08 ; elapsed = 00:08:12 . Memory (MB): peak = 4485.188 ; gain = 3592.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:06:34 ; elapsed = 00:10:42 . Memory (MB): peak = 4490.102 ; gain = 3596.234
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:08 ; elapsed = 00:08:13 . Memory (MB): peak = 4485.188 ; gain = 3592.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:53 ; elapsed = 00:11:25 . Memory (MB): peak = 4490.102 ; gain = 3596.234
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:20 ; elapsed = 00:08:38 . Memory (MB): peak = 4485.188 ; gain = 3592.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:06:53 ; elapsed = 00:11:25 . Memory (MB): peak = 4490.102 ; gain = 3596.234
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:20 ; elapsed = 00:08:39 . Memory (MB): peak = 4485.188 ; gain = 3592.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:06:54 ; elapsed = 00:11:28 . Memory (MB): peak = 4490.102 ; gain = 3596.234
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:21 ; elapsed = 00:08:41 . Memory (MB): peak = 4485.188 ; gain = 3592.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:06:55 ; elapsed = 00:11:29 . Memory (MB): peak = 4490.102 ; gain = 3596.234
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:22 ; elapsed = 00:08:41 . Memory (MB): peak = 4485.188 ; gain = 3592.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -3345,48 +3348,48 @@ Report Cell Usage:
 |2     |mult_35_24_core |     24|
 |26    |mult_35_35_core |     12|
 |38    |BUFG            |      3|
-|39    |CARRY4          |  22777|
+|39    |CARRY4          |  22795|
 |40    |DSP48E1         |    271|
-|53    |LUT1            |   4659|
-|54    |LUT2            |  29598|
+|53    |LUT1            |   4663|
+|54    |LUT2            |  29604|
 |55    |LUT3            |  55946|
-|56    |LUT4            |   2611|
-|57    |LUT5            |   1154|
-|58    |LUT6            |   1564|
+|56    |LUT4            |   2676|
+|57    |LUT5            |   1216|
+|58    |LUT6            |   1508|
 |59    |MMCME2_BASE     |      1|
 |60    |OSERDESE2       |      8|
 |62    |SRL16E          |   3032|
 |63    |SRLC32E         |  23322|
 |64    |FDPE            |      3|
-|65    |FDRE            | 110000|
+|65    |FDRE            | 110087|
 |66    |FDSE            |    204|
 |67    |IBUF            |      8|
 |68    |OBUF            |      1|
 |69    |OBUFDS          |      4|
 +------+----------------+-------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:06:55 ; elapsed = 00:11:30 . Memory (MB): peak = 4490.102 ; gain = 3596.234
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:22 ; elapsed = 00:08:42 . Memory (MB): peak = 4485.188 ; gain = 3592.234
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 461 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:05:28 ; elapsed = 00:09:12 . Memory (MB): peak = 4490.102 ; gain = 736.438
-Synthesis Optimization Complete : Time (s): cpu = 00:06:55 ; elapsed = 00:11:31 . Memory (MB): peak = 4490.102 ; gain = 3596.234
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:26 ; elapsed = 00:06:44 . Memory (MB): peak = 4485.188 ; gain = 736.363
+Synthesis Optimization Complete : Time (s): cpu = 00:04:22 ; elapsed = 00:08:42 . Memory (MB): peak = 4485.188 ; gain = 3592.234
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 4490.102 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 23053 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 4485.188 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 23071 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 4490.102 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 4485.188 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   MMCME2_BASE => MMCME2_ADV: 1 instance 
 
-Synth Design complete, checksum: 6d8fe9c9
+Synth Design complete, checksum: 480704ff
 INFO: [Common 17-83] Releasing license: Synthesis
-375 Infos, 367 Warnings, 0 Critical Warnings and 0 Errors encountered.
+377 Infos, 367 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:07:22 ; elapsed = 00:12:23 . Memory (MB): peak = 4490.102 ; gain = 4026.652
+synth_design: Time (s): cpu = 00:04:33 ; elapsed = 00:09:17 . Memory (MB): peak = 4485.188 ; gain = 4022.520
 INFO: [Common 17-1381] The checkpoint 'C:/Users/hausd/Dateien/Xilinx_proj/bsc_mandelbulb2/bsc_mandelbulb2.runs/synth_1/display_demo_dvi.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 4490.102 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 4485.188 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file display_demo_dvi_utilization_synth.rpt -pb display_demo_dvi_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Apr  2 04:50:44 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 26 20:03:15 2024...

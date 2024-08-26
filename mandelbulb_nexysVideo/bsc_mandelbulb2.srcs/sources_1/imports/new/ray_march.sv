@@ -254,45 +254,40 @@ output logic [5:0] rgb         // framebuffer color-ID
     wea = wea_reg;
   end
 
-//--------------------------------------------(User) inputs-----------------------------------------------------
+
+  //--------------------------------------------(User) inputs-----------------------------------------------------
   
-  logic [26:0] one_s = 0;
-  logic lock = 1;
   
-  // For higher zoomlevel we used way smaller stepsizes otherwise we will
-  // overshoot the object. With this configuration it is possible to zoom 
-  // out far away to see the whole Mandelbulb.
+  // Signals for button presses (one clock cycle)
+  wire PB_down_BTNC, PB_down_BTNR, PB_down_BTNU, PB_down_BTND, PB_down_BTNL;
+
+  // Instantiate the debouncer for each button
+  PushButton_Debouncer debounce_BTNC (.clk(clk), .PB(~BTNC), .PB_state(), .PB_down(PB_down_BTNC), .PB_up());
+  PushButton_Debouncer debounce_BTNR (.clk(clk), .PB(~BTNR), .PB_state(), .PB_down(PB_down_BTNR), .PB_up());
+  PushButton_Debouncer debounce_BTNU (.clk(clk), .PB(~BTNU), .PB_state(), .PB_down(PB_down_BTNU), .PB_up());
+  PushButton_Debouncer debounce_BTND (.clk(clk), .PB(~BTND), .PB_state(), .PB_down(PB_down_BTND), .PB_up());
+  PushButton_Debouncer debounce_BTNL (.clk(clk), .PB(~BTNL), .PB_state(), .PB_down(PB_down_BTNL), .PB_up());
   
+  // Use the debounced outputs directly in the logic
   always_ff @(posedge clk) begin
-    if(BTNC == 1 && lock) begin
-      camera_x <= camera_x - fixedpoint::fromfrac #(32)::fp(0, 32'b00011001100110011001100110011001);
-      lock <= 0;
-      one_s <= 0;
+    if (PB_down_BTNC) begin
+        camera_x <= camera_x - fixedpoint::fromfrac #(32)::fp(0, 32'b00011001100110011001100110011001); // 0.1 in
     end
-    if(BTNR == 1 && lock) begin
-      camera_x <= camera_x + fixedpoint::fromfrac #(32)::fp(0, 32'b00011001100110011001100110011001);
-      lock <= 0;
-      one_s <= 0;
+    if (PB_down_BTNR) begin
+        camera_x <= camera_x + fixedpoint::fromfrac #(32)::fp(0, 32'b00011001100110011001100110011001); // 0.1 out
     end
-    if(BTNU == 1 && lock) begin
-      camera_x <= camera_x - fixedpoint::fromfrac #(32)::fp(0, 32'b00000000000001101000110110111000);
-      lock <= 0;
-      one_s <= 0;
+    if (PB_down_BTNU) begin
+        camera_x <= camera_x - fixedpoint::fromfrac #(32)::fp(0, 32'b00000000000001101000110110111000); // 0.0001 in
     end
-    if(BTND == 1 && lock) begin
-      camera_x <= camera_x - fixedpoint::fromfrac #(32)::fp(0, 32'b00000000010000011000100100110111);
-      lock <= 0;
-      one_s <= 0;
+    if (PB_down_BTND) begin
+        camera_x <= camera_x - fixedpoint::fromfrac #(32)::fp(0, 32'b00000000010000011000100100110111); // 0.001 in
     end
-    if(BTNL == 1 && lock) begin
-      camera_x <= camera_x - fixedpoint::fromfrac #(32)::fp(0, 32'b00000010100011110101110000101000);
-      lock <= 0;
-      one_s <= 0;
+    if (PB_down_BTNL) begin
+        camera_x <= camera_x - fixedpoint::fromfrac #(32)::fp(0, 32'b00000010100011110101110000101000); // 0.01 in
     end
-    if(!lock) one_s <= one_s + 1;
-    if(one_s == 100000000) lock <= 1;
-  end 
+  end
 endmodule
+
 
 
 
