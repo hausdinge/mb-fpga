@@ -9,7 +9,7 @@ This project implements the Mandelbulb on an FPGA (tested on Nexys 4 DDR and Nex
 
 In order for the user to explore the Mandelbulb, the following buttons and switches on the board are used: `BTNC`, `BTNU`, `BTND`, `BTNL`, `BTNR`, `SW0`, `SW1` 
 
-In general (this also applies to the GPU versions), aliasing problems occur at deep zoom levels. To minimize aliasing problems, `SW0` should be set to `1` at **deep zoom levels**. You can recognize aliasing by the appearance of many black dots
+In general (this also applies to the GPU versions), aliasing problems occur at deep zoom levels. To minimize aliasing problems, `SW0` should be set to `1` at **deep zoom levels**. You can recognize aliasing by the appearance of many black dots.
 
 ## Zooming
 
@@ -32,3 +32,7 @@ To explore the Mandelbulb, i.e., to move around in space, you need to exit the z
 - `BTND`: Move down: 0.0333
 - `BTNL`: Move left: 0.0333
 - `BTNR`: Move right: 0.0333
+
+## Warning
+
+The FPGA can get very hot as it operates close to the power limit. It is recommended to use a heat sink and a fan.
