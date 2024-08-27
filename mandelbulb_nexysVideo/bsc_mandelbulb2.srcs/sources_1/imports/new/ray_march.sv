@@ -11,7 +11,7 @@ BTND, // zoom in 0.001 steps
 BTNR, // zoom out 0.1 steps
 BTNL, // zoom in 0.01 steps
 sw0,  // change resolution (ray march epsilon) 
-sw1,  // change color (not implemented in this version) 
+sw1,  // change mode to move in space
 output logic wea,              // framebuffer write-en
 output logic [19:0] mem_addr,  // framebuffer addr
 output logic [5:0] rgb         // framebuffer color-ID
@@ -270,20 +270,40 @@ output logic [5:0] rgb         // framebuffer color-ID
   
   // Use the debounced outputs directly in the logic
   always_ff @(posedge clk) begin
-    if (PB_down_BTNC) begin
-        camera_x <= camera_x - fixedpoint::fromfrac #(32)::fp(0, 32'b00011001100110011001100110011001); // 0.1 in
+    if(!sw1) begin
+      if (PB_down_BTNC) begin
+          camera_x <= camera_x - fixedpoint::fromfrac #(32)::fp(0, 32'b00011001100110011001100110011001); // 0.1 in
+      end
+      if (PB_down_BTNR) begin
+          camera_x <= camera_x + fixedpoint::fromfrac #(32)::fp(0, 32'b00011001100110011001100110011001); // 0.1 out
+      end
+      if (PB_down_BTNU) begin
+          camera_x <= camera_x - fixedpoint::fromfrac #(32)::fp(0, 32'b00000000000001101000110110111000); // 0.0001 in
+      end
+      if (PB_down_BTND) begin
+          camera_x <= camera_x - fixedpoint::fromfrac #(32)::fp(0, 32'b00000000010000011000100100110111); // 0.001 in
+      end
+      if (PB_down_BTNL) begin
+          camera_x <= camera_x - fixedpoint::fromfrac #(32)::fp(0, 32'b00000010100011110101110000101000); // 0.01 in
+      end
     end
-    if (PB_down_BTNR) begin
-        camera_x <= camera_x + fixedpoint::fromfrac #(32)::fp(0, 32'b00011001100110011001100110011001); // 0.1 out
-    end
-    if (PB_down_BTNU) begin
-        camera_x <= camera_x - fixedpoint::fromfrac #(32)::fp(0, 32'b00000000000001101000110110111000); // 0.0001 in
-    end
-    if (PB_down_BTND) begin
-        camera_x <= camera_x - fixedpoint::fromfrac #(32)::fp(0, 32'b00000000010000011000100100110111); // 0.001 in
-    end
-    if (PB_down_BTNL) begin
-        camera_x <= camera_x - fixedpoint::fromfrac #(32)::fp(0, 32'b00000010100011110101110000101000); // 0.01 in
+    
+    else begin
+      if (PB_down_BTNC) begin
+          camera_x <= camera_x - fixedpoint::fromfrac #(32)::fp(0, 32'b00001000100010001000100010001000); // 0.0333 in
+      end
+      if (PB_down_BTNR) begin
+          camera_y <= camera_y + fixedpoint::fromfrac #(32)::fp(0, 32'b00001000100010001000100010001000); // 0.0333 right
+      end
+      if (PB_down_BTNU) begin
+          camera_z <= camera_z + fixedpoint::fromfrac #(32)::fp(0, 32'b00001000100010001000100010001000); // 0.0333 up
+      end
+      if (PB_down_BTND) begin
+          camera_z <= camera_z - fixedpoint::fromfrac #(32)::fp(0, 32'b00001000100010001000100010001000); // 0.0333 down
+      end
+      if (PB_down_BTNL) begin
+          camera_y <= camera_y - fixedpoint::fromfrac #(32)::fp(0, 32'b00001000100010001000100010001000); // 0.0333 left
+      end
     end
   end
 endmodule
